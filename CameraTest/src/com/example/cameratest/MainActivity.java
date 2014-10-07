@@ -43,6 +43,8 @@ public class MainActivity extends Activity {
     
     private static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 12345;
     
+    //This method creates an intent. 
+    //It is told that we need camera action, and the results should be saved in a location that is sent to the intent.
     public void takeAPhoto() {
 		String path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/MyCameraTest";
 		File folder = new File(path);
@@ -58,6 +60,7 @@ public class MainActivity extends Activity {
 		//TODO: Add your code here...
     }
     
+    //This method is run after returning back from camera activity:
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		if (requestCode == CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE){
 			TextView tv = (TextView)findViewById(R.id.status);
