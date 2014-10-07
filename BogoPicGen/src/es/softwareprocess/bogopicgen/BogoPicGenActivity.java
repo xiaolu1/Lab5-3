@@ -85,6 +85,9 @@ public class BogoPicGenActivity extends Activity {
 		//takeAPhoto();
 	}
 	//----------------------------------------------------------------------------------------------------
+	//This method generates a random igame by calling BogoPicGen.generateBitmap():
+	//The result should be saved in newBMP
+	//Also should be reflected in the imageButton
 	private void setBogoPic() {
 		//TODO: Add your code here...
 		//TODO: Add your code here...
@@ -93,7 +96,8 @@ public class BogoPicGenActivity extends Activity {
 	}
 	//----------------------------------------------------------------------------------------------------
 	//----------------------------------------------------------------------------------------------------
-	// call this to accept
+	// call this to accept the generated photo or cancel it. 
+	//If it is accepted, the result is set to RESULT_OK, otherwise RESULT_CANCELED.
 	private void processIntent(boolean okPressed) {
 		Intent intent = getIntent();
 		if (intent != null) {
