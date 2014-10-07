@@ -26,4 +26,7 @@ Lab5-3
 ======
 ======
 
-// This project is adopted from https://eclass.srv.ualberta.ca/mod/resource/view.php?id=1136415
+// This project is adopted from: 
+https://github.com/abramhindle/BogoPicGen
+and
+https://eclass.srv.ualberta.ca/mod/resource/view.php?id=1136415
