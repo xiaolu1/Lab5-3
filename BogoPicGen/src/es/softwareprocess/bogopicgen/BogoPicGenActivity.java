@@ -86,10 +86,10 @@ public class BogoPicGenActivity extends Activity {
 	}
 	//----------------------------------------------------------------------------------------------------
 	private void setBogoPic() {
-		Toast.makeText(this, "Generating Photo", Toast.LENGTH_SHORT).show();
-		newBMP = BogoPicGen.generateBitmap(400,  400);
-		ImageButton ib = (ImageButton) findViewById(R.id.TakeAPhoto);
-		ib.setImageBitmap(newBMP);
+		//TODO: Add your code here...
+		//TODO: Add your code here...
+		//TODO: Add your code here...
+		//TODO: Add your code here...
 	}
 	//----------------------------------------------------------------------------------------------------
 	//----------------------------------------------------------------------------------------------------
@@ -100,12 +100,12 @@ public class BogoPicGenActivity extends Activity {
 			try {
 				if (intent.getExtras() != null) {    
 					if (okPressed) {
-						Uri uri = (Uri) intent.getExtras().get(MediaStore.EXTRA_OUTPUT);
-						OutputStream out = new FileOutputStream(new File(uri.getPath()));
-						newBMP.compress(Bitmap.CompressFormat.JPEG, 75, out);
-						out.close();
-						intent.putExtra("TOTAL_ATTEMPTS", Integer.toString(numberOfAttempts));
-						setResult(RESULT_OK, intent);
+						//TODO: Add your code here...
+						//TODO: Add your code here...
+						//TODO: Add your code here...
+						//TODO: Add your code here...
+						//TODO: Add your code here...
+						//TODO: Add your code here...
 						//setResult(RESULT_OK);
 					}//if (okPressed).
 					else{//cancel is pressed:
